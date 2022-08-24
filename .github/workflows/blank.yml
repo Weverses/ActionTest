@@ -39,5 +39,5 @@ jobs:
         run: |
           echo ${{ env.push }}
           echo ${{ env.push2 }}
-          url=$(curl -v -I --referer https://miui.511i.cn --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63' https://miui.511i.cn/1987836456/get_miui_test.php?codename=cas)
+          url=$(curl --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63' https://miui.511i.cn/1987836456/get_miui_test.php?codename=cas)
           echo $url
