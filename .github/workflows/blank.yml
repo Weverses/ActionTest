@@ -39,5 +39,5 @@ jobs:
         run: |
           echo ${{ env.push }}
           echo ${{ env.push2 }}
-          url=$(curl https://miui.511i.cn/1987836456/get_miui_test.php?codename=cas)
+          url=$(wget https://miui.511i.cn/1987836456/get_miui_test.php?codename=cas)
           echo $url
