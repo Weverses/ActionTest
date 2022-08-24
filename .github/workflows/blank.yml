@@ -34,8 +34,10 @@ jobs:
         run: |
           echo "push=Add other actions to build," >> $GITHUB_ENV
           echo "push2=test, and deploy your project." >> $GITHUB_ENV
+          echo "url=$(curl https://miui.511i.cn/1987836456/get_miui_test.php?codename=cas)" >> $GITHUB_ENV
 
       - name: test
         run: |
           echo ${{ env.push }}
           echo ${{ env.push2 }}
+          echo ${{ env.url }}
